@@ -16,20 +16,19 @@ if "messages" not in st.session_state:
 # মডেল এবং তাদের API Key ম্যাপিং (সবচেয়ে গুরুত্বপূর্ণ অংশ)
 # এখানে মডেলের নাম এবং কোন এনভায়রনমেন্ট ভ্যারিয়েবল থেকে কী নেবে তা ডিফাইন করা হয়েছে
 MODEL_CONFIG = {
-    "Claude 3 Haiku": {
-        "model": "claude-3-haiku-20240307", 
+    "Claude 4.8 opuse": {
+        "model": "claude-4.8-opuse 20240307", 
         "api_key_env": "ANTHROPIC_API_KEY"
     },
     "DeepSeek Chat": {
-        "model": "deepseek/deepseek-chat", 
+        "model": "deepseek V4 pro thinking",
         "api_key_env": "DEEPSEEK_API_KEY"
     },
-    "GLM-4": {
-        "model": "zhipu/glm-4", 
-        "api_key_env": "ZHIPU_API_KEY"
-    },
-    "GPT-4o Mini (OpenRouter)": {
-        "model": "openrouter/openai/gpt-4o-mini", 
+   "GLM-5.2": {
+        "model": "openrouter/thudm/glm-5.2", 
+        "api_key_env": "OPENROUTER_API_KEY"    },
+    "GPT-5.5 Mini (OpenRouter)": {
+        "model": "openrouter/openai/gpt-5.5-mini", 
         "api_key_env": "OPENROUTER_API_KEY"
     }
 }
